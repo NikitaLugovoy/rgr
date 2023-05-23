@@ -1,5 +1,8 @@
 // font-family: 'Open Sans', sans-serif;
-
+*{
+    margin: 0;
+    padding: 0;
+}
 $light-color: #fff;
 $accent-color: #65e496;
 
@@ -9,14 +12,14 @@ body {
 
 .page-main {
     background-image: url(../img/image1.jpg);
-    width: 1870px;
+    width: 100%;
     height: 780px;
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
     
     .menu{
-        margin-top: 120px;
+        margin-top: 150px;
         background-color: #5474FD;
         height: 85px;
         display: flex;
@@ -58,11 +61,13 @@ body {
             }
         }
     }
+
+    
 }
 .page{
     background-image: url(../img/image2.jpg);
     margin-top: 80px;
-    width: 1870px;
+    width: 100%;
     height: 750px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +83,7 @@ body {
     }    
 }
 .howin{
-    width: 1870px;
+    width: 100%;
     background-color: #333333;
     height: 340px;
     display: flex;
@@ -360,7 +365,7 @@ body {
 }
 .page-about{
     background-image: url(../img/image3.jpg);
-    width: 1870px;
+    width: 100%;
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -390,7 +395,7 @@ body {
 
 .page-right{
     background-image: url(../img/image4.jpg);
-    width: 1870px;
+    width: 100%;
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -417,7 +422,7 @@ body {
 
 .page-last{
     background-image: url(../img/image5.jpg);
-    width: 1870px;
+    width: 100%;
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -478,7 +483,7 @@ body {
     }
 }
 .futer{
-    width: 1870px;
+    width: 100%;
     background-color: #232323;
     height: 300px;
     display: flex;
@@ -514,4 +519,167 @@ body {
             }
         }
     }
+}
+
+
+
+
+/* Медиа-запрос для разрешения 1368px */
+@media (max-width: 1368px) {
+    .page-main{
+    .menu{
+        margin-top: 150px;
+        
+        &__logo{
+            margin-left: 20px;
+        font-size: 20px;
+        }
+        &-list{
+            margin-right: 20px;
+            &__item{
+                margin-left: 20px;
+                
+            }
+        }
+    }
+}
+
+.page-about {
+    .block-about {
+        width: 450px;
+        height: 325px;
+        top: 200px;
+        right: 230px;
+}
+}
+
+
+.page-right {
+    .block-text {
+        width: 450px;
+        height: 325px;
+        top: 200px;
+        right: 230px;
+}
+}
+
+
+.futer {
+    top: -10px;
+    .block-text {
+        margin: 5% 30% 0% 30%;
+        &__title {
+            font-size: 20px;
+            width: 400px;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+}
+/* Медиа-запрос для разрешения 767px */
+@media (max-width: 767px) {
+    .page-main{
+    .menu{
+        margin-top: 125px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        &__logo{
+        margin-left: 20px;
+        font-size: 20px;
+        }
+        &-list{
+            margin-top: 10px;
+            &__item{
+                margin-left: 0;
+                margin-bottom: 10px;
+                
+            }
+            &__link{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+.page-right {
+
+    margin: 0;
+    padding: 0;
+    .block-text {
+        padding-right: 0;
+        width: auto;
+        height: auto;
+        top: 20px;
+        left: 10px;
+        margin-right: -100px;
+        &__name{
+            
+            font-size: 8px;
+        }
+        &__title{
+            font-size: 10px;
+        }
+    &__description{
+        font-size: 7px;
+        margin-top: -25px;
+    }
+    }
+}
+
+.page-about {
+
+    margin: 0;
+    padding: 0;
+    .block-about {
+        
+        padding-right: 0;
+        width: auto;
+        height: auto;
+        top: 20px;
+        left: 10px;
+        margin-right: -100px;
+        .block-text{
+        &__name{
+            
+            font-size: 8px;
+        }
+        &__title{
+            font-size: 10px;
+        }
+    &__description{
+        font-size: 7px;
+        margin-top: -25px;
+    }
+}
+    }
+}
+
+.futer {
+    top: -10px;
+    height: auto;
+    &__iconki{
+        display: flex;
+        flex-direction: column;
+        margin-top: -35px;
+    }
+    .block-text {
+        margin: 5% 20px 0 20px;
+        text-align: center;
+        width: auto;
+        
+        &__title {
+            font-size: 10px;
+        }
+        span {
+            font-size: 7px;
+        }
+    }
+}
+
 }

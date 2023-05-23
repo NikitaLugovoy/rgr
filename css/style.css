@@ -1,18 +1,23 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
 
 .page-main {
   background-image: url(../img/image1.jpg);
-  width: 1870px;
+  width: 100%;
   height: 780px;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
 }
 .page-main .menu {
-  margin-top: 120px;
+  margin-top: 150px;
   background-color: #5474FD;
   height: 85px;
   display: flex;
@@ -55,7 +60,7 @@ body {
 .page {
   background-image: url(../img/image2.jpg);
   margin-top: 80px;
-  width: 1870px;
+  width: 100%;
   height: 750px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,7 +74,7 @@ body {
 }
 
 .howin {
-  width: 1870px;
+  width: 100%;
   background-color: #333333;
   height: 340px;
   display: flex;
@@ -325,7 +330,7 @@ body {
 
 .page-about {
   background-image: url(../img/image3.jpg);
-  width: 1870px;
+  width: 100%;
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -352,7 +357,7 @@ body {
 
 .page-right {
   background-image: url(../img/image4.jpg);
-  width: 1870px;
+  width: 100%;
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -379,7 +384,7 @@ body {
 
 .page-last {
   background-image: url(../img/image5.jpg);
-  width: 1870px;
+  width: 100%;
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -441,7 +446,7 @@ body {
 }
 
 .futer {
-  width: 1870px;
+  width: 100%;
   background-color: #232323;
   height: 300px;
   display: flex;
@@ -476,4 +481,134 @@ body {
   letter-spacing: 1.6px;
   font-weight: 400;
   font-size: 16px;
+}
+
+/* Медиа-запрос для разрешения 1368px */
+@media (max-width: 1368px) {
+  .page-main .menu {
+    margin-top: 150px;
+  }
+  .page-main .menu__logo {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .page-main .menu-list {
+    margin-right: 20px;
+  }
+  .page-main .menu-list__item {
+    margin-left: 20px;
+  }
+  .page-about .block-about {
+    width: 450px;
+    height: 325px;
+    top: 200px;
+    right: 230px;
+  }
+  .page-right .block-text {
+    width: 450px;
+    height: 325px;
+    top: 200px;
+    right: 230px;
+  }
+  .futer {
+    top: -10px;
+  }
+  .futer .block-text {
+    margin: 5% 30% 0% 30%;
+  }
+  .futer .block-text__title {
+    font-size: 20px;
+    width: 400px;
+  }
+  .futer .block-text__title span {
+    font-size: 14px;
+  }
+}
+/* Медиа-запрос для разрешения 767px */
+@media (max-width: 767px) {
+  .page-main .menu {
+    margin-top: 125px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .page-main .menu__logo {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .page-main .menu-list {
+    margin-top: 10px;
+  }
+  .page-main .menu-list__item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .page-main .menu-list__link {
+    font-size: 12px;
+  }
+  .page-right {
+    margin: 0;
+    padding: 0;
+  }
+  .page-right .block-text {
+    padding-right: 0;
+    width: auto;
+    height: auto;
+    top: 20px;
+    left: 10px;
+    margin-right: -100px;
+  }
+  .page-right .block-text__name {
+    font-size: 8px;
+  }
+  .page-right .block-text__title {
+    font-size: 10px;
+  }
+  .page-right .block-text__description {
+    font-size: 7px;
+    margin-top: -25px;
+  }
+  .page-about {
+    margin: 0;
+    padding: 0;
+  }
+  .page-about .block-about {
+    padding-right: 0;
+    width: auto;
+    height: auto;
+    top: 20px;
+    left: 10px;
+    margin-right: -100px;
+  }
+  .page-about .block-about .block-text__name {
+    font-size: 8px;
+  }
+  .page-about .block-about .block-text__title {
+    font-size: 10px;
+  }
+  .page-about .block-about .block-text__description {
+    font-size: 7px;
+    margin-top: -25px;
+  }
+  .futer {
+    top: -10px;
+    height: auto;
+  }
+  .futer__iconki {
+    display: flex;
+    flex-direction: column;
+    margin-top: -35px;
+  }
+  .futer .block-text {
+    margin: 5% 20px 0 20px;
+    text-align: center;
+    width: auto;
+  }
+  .futer .block-text__title {
+    font-size: 10px;
+  }
+  .futer .block-text span {
+    font-size: 7px;
+  }
 }/*# sourceMappingURL=style.css.map */
